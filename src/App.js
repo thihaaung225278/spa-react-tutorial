@@ -8,7 +8,7 @@ function App() {
   let name = "Thiha Aung"
 
   return (
-    <div>
+    <div className="app">
       <h1>Hello {name}</h1>
       {/* 1st way (public folder way) */}
       {/* absolute path */}

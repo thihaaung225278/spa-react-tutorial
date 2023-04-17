@@ -5,19 +5,19 @@ import './App.css';
 
 function App() {
 
+  // normal value cannot rerender our component so it cannot change name in component
+  // State can rerender for our component , coz we need state
   let name = "Thiha Aung"
+
+  let changeName = () =>{
+    name = "Maung Maung"
+    console.log(name)
+  }
 
   return (
     <div className="app">
       <h1>Hello {name}</h1>
-      {/* 1st way (public folder way) */}
-      {/* absolute path */}
-      {/* <img src="http://localhost:3000/reactjs.jpg" alt="image" /> */}
-      {/* relative path */}
-      {/* <img src="/reactjs.jpg" alt="image" /> */}
-
-      {/* 2nd way - import way (many people using this way) */}
-      <img src={Image} alt="reactjs" />
+      <button onClick={changeName}>change name</button>
     </div>
     
   );

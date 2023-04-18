@@ -2,15 +2,15 @@ import logo from './logo.svg';
 import Image from './assets/reactjs.jpeg';
 
 import './App.css';
+import { useState } from 'react';
 
 function App() {
 
-  // normal value cannot rerender our component so it cannot change name in component
-  // State can rerender for our component , coz we need state
-  let name = "Thiha Aung"
+  // useState Hook return [] with getter and setter like that [getter, setter]
+  let [name, setName] = useState("Thiha Aung")
 
   let changeName = () =>{
-    name = "Maung Maung"
+    setName("Maung Maung")
     console.log(name)
   }
 

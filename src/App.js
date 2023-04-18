@@ -7,6 +7,8 @@ import { useState } from 'react';
 function App() {
 
   // useState Hook return [] with getter and setter like that [getter, setter]
+  // virtual dom compare with original state and changed state with some data is change
+
   let [name, setName] = useState("Thiha Aung")
 
   let changeName = () =>{

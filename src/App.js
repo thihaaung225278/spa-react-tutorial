@@ -6,10 +6,22 @@ import { useState } from 'react';
 
 function App() {
 
-  // useState Hook return [] with getter and setter like that [getter, setter]
-  // virtual dom compare with original state and changed state with some data is change
-
   let [name, setName] = useState("Thiha Aung")
+
+  let [posts, setPosts] = useState([
+    {
+      "id": 1,
+      "title": "Post One"
+    },
+    {
+      "id": 2,
+      "title": "Post Two"
+    },
+    {
+      "id": 3,
+      "title": "Post Three"
+    }
+  ])
 
   let changeName = () =>{
     setName("Maung Maung")
@@ -20,6 +32,13 @@ function App() {
     <div className="app">
       <h1>Hello {name}</h1>
       <button onClick={changeName}>change name</button>
+
+      <h1>list</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
     </div>
     
   );

@@ -1,47 +1,32 @@
-import logo from './logo.svg';
-import Image from './assets/reactjs.jpeg';
+import React from 'react'
+import { useState } from 'react'
 
-import './App.css';
-import { useState } from 'react';
+export default function App() {
 
-function App() {
+  let [count, setCount] = useState(0)
 
-  let [name, setName] = useState("Thiha Aung")
+  // we should not use to original state data (count)
+  let incrementCount = () =>{
 
-  let [posts, setPosts] = useState([
-    {
-      "id": 1,
-      "title": "Post One"
-    },
-    {
-      "id": 2,
-      "title": "Post Two"
-    },
-    {
-      "id": 3,
-      "title": "Post Three"
-    }
-  ])
+    // we think that is increase 4 the following code , but it not increase 4 , just only increase 1 because we use original state(count)
 
-  let changeName = () =>{
-    setName("Maung Maung")
-    console.log(name)
+    // Should not write this way
+    // setCount(count+1)
+    // setCount(count+1)
+    // setCount(count+1)
+    // setCount(count+1)
+
+    // should write this way
+    setCount((prevStateCount) => prevStateCount + 1 )
+    setCount((prevStateCount) => prevStateCount + 1 )
+    setCount((prevStateCount) => prevStateCount + 1 )
   }
 
   return (
-    <div className="app">
-      <h1>Hello {name}</h1>
-      <button onClick={changeName}>change name</button>
-
-      <h1>list</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul>
+    <div>
+      <h1>Counter</h1>
+      <h3>Count  - {count}</h3>
+      <button onClick={incrementCount}>increment</button>
     </div>
-    
-  );
+  )
 }
-
-export default App;

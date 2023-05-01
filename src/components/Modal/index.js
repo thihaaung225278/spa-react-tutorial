@@ -5,9 +5,11 @@ import ReactDOM from 'react-dom'
 export default function Modal({children}) {
   return (
     ReactDOM.createPortal(
-      <div className="modal-backdoor">
-        <div className="modal">
-          {children}
+      <div className="modalBox">
+        <div className="modal-backdoor">
+          <div className="modal">
+            {children}
+          </div>
         </div>
       </div>, document.getElementById('modal-box')
     )

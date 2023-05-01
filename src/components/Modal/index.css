@@ -1,4 +1,4 @@
-.modal-backdoor{
+.modalBox .modal-backdoor{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
 }
-.modal{
+.modalBox .modal{
     background: white;
     max-width: 500px;
     padding: 20px;
@@ -16,11 +16,11 @@
     left: 50%;
     transform: translate(-50%, -50%)
 }
-.red-title{
+.modalBox .red-title{
     background: red;
     color: white;
 }
-.blue-title{
+.modalBox .blue-title{
     background: blue;
     color: white;
 }

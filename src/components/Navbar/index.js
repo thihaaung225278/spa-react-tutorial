@@ -3,7 +3,8 @@ import './index.css'
 
 export default function Navbar({setShowModal}) {
   return (
-    <nav>
+    // တစ်ခြား componet က css class တွေယူသုံး ရင် effect ဖြစ်နေတယ် / အဲ့လိုမဖြစ်အောင် parent div မှာ className ပေးပြီးထိန်း ထားရမယ်
+    <nav class="navigation">
         <div className="navbar">
             <h1>Logo</h1>
             <ul>

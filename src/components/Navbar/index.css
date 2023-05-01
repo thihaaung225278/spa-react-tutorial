@@ -1,7 +1,7 @@
-nav{
+.navigation{
     background: black;
 }
-nav .navbar{
+.navigation .navbar{
     max-width: 1200px;
     width: 1200px;
     margin: 0 auto;
@@ -10,14 +10,14 @@ nav .navbar{
     justify-content: space-between;
     align-items: center;
 }
-nav h1{
+.navigation h1{
     color: white;
 }
-nav ul{
+.navigation ul{
     list-style: none;
     display: flex;
 }
-nav ul li a{
+.navigation ul li a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;

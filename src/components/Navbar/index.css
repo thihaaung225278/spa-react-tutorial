@@ -1,0 +1,24 @@
+nav{
+    background: black;
+}
+nav .navbar{
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}

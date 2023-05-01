@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
+import PostsList from './components/PostsList'
 
 export default function App() {
 
@@ -24,33 +26,11 @@ export default function App() {
     },
   ])
 
-  let changeName = function(){
-    setName("Maung Maung")
-  }
-
-  let deletePost = function(id){
-    setPosts((prevState) => prevState.filter( post => post.id !== id ))
-  }
 
   return (
-    <div>
-      <h1>Hi! {name}</h1>
-      <button onClick={changeName}>Change Name...</button>
-
-      <h2>List Items</h2>
-      <ul>  
-        {/* !! နဲ့ Boolean ပြောင်းပြသွား / condition စစ်ပြသွား */}
-        {
-            !!posts.length && posts.map(post => (
-            <li key={post.id}>{post.title} <button onClick={()=>deletePost(post.id)}>Delete Post</button></li>
-        ))
-        }
-        {
-          !posts.length && <h3>There have no posts....</h3>
-        }
-      </ul>
-    </div>
-
-    // video file မှာရှင်းပြသွား ......
+    <>
+      <Navbar />
+      <PostsList posts={posts} />
+    </>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import PostsList from './components/PostsList'
+import Modal from './components/Modal'
 
 export default function App() {
 
@@ -31,6 +32,16 @@ export default function App() {
     <>
       <Navbar />
       <PostsList posts={posts} />
+      {/* <Modal>
+        <h2 className="red-title">Read Modal</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, esse!</p>
+      </Modal> */}
+      <Modal>
+        <h1 class="blue-title">Testing</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis optio impedit accusamus. Beatae tempore, praesentium cum sed accusantium deserunt! Dolor ducimus debitis est dolorum rerum accusamus reprehenderit, corporis voluptatum nam quam ad eos nisi, cupiditate cumque, eius expedita adipisci. Porro consequuntur fugiat laboriosam aspernatur ea quibusdam. Obcaecati, minus mollitia.
+        </p>
+      </Modal>
     </>
   )
 }

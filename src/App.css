@@ -1,5 +1,5 @@
 body{
-  background: lightpink;
+  background: skyblue;
 }
 .app h1 span{
   color: cyan;
@@ -16,4 +16,8 @@ body{
   background: white;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+button{
+  cursor: pointer;
 }

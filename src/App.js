@@ -27,6 +27,8 @@ export default function App() {
     },
   ])
 
+  // inspect ထောက်ပြီး <style></style> တွေဘယ်လို order စီထားလဲ ပြောပြသွား....
+  // index.js ကိုစလုပ်လို့ အဲ့ကစကြည့်ရမယ်
 
   return (
     <>
@@ -37,8 +39,8 @@ export default function App() {
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, esse!</p>
       </Modal> */}
       {
-        showModal && <Modal>
-        <h1 class="blue-title">Testing</h1>
+        showModal && <Modal danger>
+        <h1 className="blue-title">Testing</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis optio impedit accusamus. Beatae tempore, praesentium cum sed accusantium deserunt! Dolor ducimus debitis est dolorum rerum accusamus reprehenderit, corporis voluptatum nam quam ad eos nisi, cupiditate cumque, eius expedita adipisci. Porro consequuntur fugiat laboriosam aspernatur ea quibusdam. Obcaecati, minus mollitia.
         </p>

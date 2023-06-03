@@ -1,0 +1,12 @@
+.PostFrom .form-control{
+    margin: 20px 0;
+    width: 100%;
+}
+.PostFrom label{
+    margin-bottom: 10px;
+    display: block;
+}
+.PostFrom input{
+    height: 40px;
+    width: 100%;
+}

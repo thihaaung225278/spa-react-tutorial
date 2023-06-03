@@ -3,14 +3,14 @@ import "./index.css"
 import ReactDOM from 'react-dom'
 
 export default function Modal({children, theme = false}) {
+
+  let className = theme ? "border-blue": "border-red"
+
   return (  
     ReactDOM.createPortal(
       <div className="modalBox">
         <div className="modal-bg">
-            <div className="modal" style={{
-              border: '4px solid',
-              borderColor: theme ? "blue": "red"
-            }}>
+            <div className={`modal ${className}`}>
                 {children}
             </div>
         </div>

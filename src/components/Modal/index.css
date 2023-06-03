@@ -11,6 +11,7 @@
     background: white;
     width: 400px;
     padding: 20px;
+    border-radius: 10px;
 
     position: absolute;
     top: 50%;
@@ -25,4 +26,10 @@
     margin-top: 20px;
     color: white;
     cursor: pointer;
+}
+.modalBox .border-blue{
+    border: 5px solid blue
+}
+.modalBox .border-red{
+    border: 5px solid red;
 }

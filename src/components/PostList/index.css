@@ -1,0 +1,16 @@
+.postLists .post-lists{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+.postLists .single-post{
+    height: 200px;
+    border: 5px solid #bbb;
+    border-radius: 10px;
+    font-size: 20px;
+    width: calc(100% / 3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

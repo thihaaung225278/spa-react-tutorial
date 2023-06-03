@@ -1,0 +1,21 @@
+.navigation nav{
+    background: #bbb;
+
+    display: flex;
+    justify-content: space-between;
+    height: 70px;;
+}
+
+.navigation .flex-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation nav ul{
+    list-style: none;
+}
+
+.navigation nav ul li a{
+    color: black;
+}

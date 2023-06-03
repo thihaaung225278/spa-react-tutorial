@@ -1,8 +1,12 @@
-body {
-  background: cyan;
+/* index (root) css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }

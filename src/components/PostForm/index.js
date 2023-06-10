@@ -10,7 +10,7 @@ export default function Index() {
       <h2>Create Post Form</h2>
       <div className="form-control">
         <label htmlFor="create-id">Crate Title</label>
-        <input type="text" id='create-title' onChange={(e) => setTitle(e.target.value)} />
+        <input type="text" id='create-title' onChange={ (e) => setTitle(e.target.value) } />
       </div>
       <div>
         {title}

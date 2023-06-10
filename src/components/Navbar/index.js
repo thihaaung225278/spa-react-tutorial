@@ -8,7 +8,7 @@ export default function Navbar({setShowModal}) {
           <div className="container flex-wrap">
               <h3>Logo</h3>
               <ul>
-                  <li><a href="#" onClick={() => setShowModal(true)}>Sing UP</a></li>
+                  <li><a href="#" onClick={() => setShowModal(true)}>Create Post</a></li>
               </ul>
           </div>
       </nav>

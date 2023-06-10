@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './index.css'
 
-export default function Index() {
+export default function Index({addPost}) {
 
   const [title, setTitle] = useState('')
 
@@ -9,22 +9,29 @@ export default function Index() {
     setTitle('')
   }
 
+  let submitPost = () => {
+    let post = {
+      id: Math.floor(Math.random()*10000),
+      title: title
+    }
+    restartForm()
+    addPost(post)
+  }
+
   return (
-    <form className='PostFrom'>
+    <form className='PostFrom' onSubmit={submitPost}>
       <h2>Create Post Form</h2>
       <div className="form-control">
         <label htmlFor="create-id">Crate Title</label>
         <input type="text" id='create-title' onChange={ (e) => setTitle(e.target.value) } value={title}/>
       </div>
-      <div>
-        {title}
-      </div>
+
       <div className='form-control'>  
-        <button>Create New Post</button>
+        <button type="submit">Create New Post</button>
       </div>
-      <div className="form-control">
+      {/* <div className="form-control">
         <button onClick={restartForm}>Restart</button>
-      </div>
+      </div> */}
     </form>
   )
 }

@@ -24,6 +24,11 @@ function App() {
     },
   ]) 
 
+  let addPost = (post) => {
+    setPosts( prevState => [...prevState, post] )
+    setShowModal(false)
+  }
+
   // git testing....
   return (
     <div className="app">
@@ -33,7 +38,7 @@ function App() {
         showModal
         &&
         <Modal theme={true} setShowModal={setShowModal}>
-          <PostForm />
+          <PostForm addPost={addPost} />
         </Modal>
       }
     </div>

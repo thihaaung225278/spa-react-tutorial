@@ -12,7 +12,7 @@ export default function Modal({children, theme = false, setShowModal}) {
         <div className="modal-bg">
             <div className={`modal ${className}`}>
                 {children}
-                <button onClick={() => setShowModal(false)}>Close</button>
+                <button className="close" onClick={() => setShowModal(false)}>Close</button>
             </div>
         </div>
       </div>, document.getElementById("modal-root")

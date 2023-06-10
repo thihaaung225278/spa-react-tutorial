@@ -27,6 +27,9 @@
     color: white;
     cursor: pointer;
 }
+.modalBox .modal-bg .modal button.close{
+    background: red;
+}
 .modalBox .border-blue{
     border: 5px solid blue
 }

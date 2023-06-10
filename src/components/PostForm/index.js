@@ -1,24 +1,19 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './index.css'
 
 export default function Index({addPost}) {
 
-  // const [title, setTitle] = useState('')
-
-  const title = useRef()
+  const [title, setTitle] = useState('')
 
   let restartForm = () => {
-    // setTitle('')
-    title.current.value = ''
+    setTitle('')
   }
 
   let submitPost = () => {
-
     let post = {
       id: Math.floor(Math.random()*10000),
-      title: title.current.value
+      title: title
     }
-    console.log(post)
     restartForm()
     addPost(post)
   }
@@ -28,7 +23,7 @@ export default function Index({addPost}) {
       <h2>Create Post Form</h2>
       <div className="form-control">
         <label htmlFor="create-id">Crate Title</label>
-        <input type="text" id='create-title' ref={title} />
+        <input type="text" id='create-title' onChange={ (e) => setTitle(e.target.value) } value={title}/>
       </div>
 
       <div className='form-control'>  

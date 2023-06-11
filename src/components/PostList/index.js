@@ -8,7 +8,10 @@ export default function PostList({posts}) {
       <div className="container">
           <div className="post-lists">
               {
-                  posts.map(post => <div className={`single-post ${styles.card}`} key={post.id}>{post.title}</div>)
+                  posts.map(post => <div className={`single-post ${styles.card}`} key={post.id}>
+                    <h3>{post.title}</h3>
+                    <h5>{post.status}</h5>
+                  </div>)
               }
           </div>
       </div>

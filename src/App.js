@@ -12,15 +12,18 @@ function App() {
   let [posts, setPosts] = useState([
     {
       id: 1,
-      title: "Post One (1)"
+      title: "Post One (1)",
+      status: "Ongoing"
     },
     {
       id: 2,
-      title: "Post One (2)"
+      title: "Post One (2)",
+      status: "Dropped"
     },
     {
       id: 3,
-      title: "Post One (3)"
+      title: "Post One (3)",
+      status: "Dropped"
     },
   ]) 
 
